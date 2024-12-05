@@ -57,8 +57,8 @@ Base URL: `/api/v1/transaction`
 ### Steps
 1. Clone the repository.
    ```sh
-   git clone <repository_url>
-   cd wallet-service
+   gh repo clone dwididit/walletservice
+   cd walletservice
    ```
 
 2. Configure the database connection in `application.properties` or `application.yml`.
