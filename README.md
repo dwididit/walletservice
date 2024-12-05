@@ -26,6 +26,9 @@ Wallet Service API provides functionality for user account management and transa
 - **Lombok**: Simplifies boilerplate code.
 - **Database**: For persistence (e.g., MySQL, PostgreSQL).
 
+## Entity Relational Diagram
+![Entity Relational Diagram](https://dwidi.com/wp-content/uploads/2024/12/wallet-service-ERD.png)
+
 ## API Endpoints
 
 ### User Controller
