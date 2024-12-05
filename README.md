@@ -50,8 +50,8 @@ Base URL: `/api/v1/transaction`
 ## Setup Instructions
 
 ### Prerequisites
-- Java 21 or higher.
-- Maven.
+- Java 21 or higher
+- Maven
 - PostgreSQL
 
 ### Steps
