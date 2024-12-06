@@ -94,6 +94,10 @@ public class TransactionServiceImpl implements TransactionService {
         User existingUser = userRepository.findById(userId)
                 .orElseThrow(() -> new RuntimeException("User not found"));
 
+        if (existingUser.getLastBalance().compareTo(transactionRequestDTO.getAmount()) < 0) {
+            throw new RuntimeException("Insufficient balance");
+        }
+
         Transaction billPayment = new Transaction();
         billPayment.setUser(existingUser);
         billPayment.setAmount(transactionRequestDTO.getAmount());
